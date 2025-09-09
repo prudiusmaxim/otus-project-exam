@@ -6,14 +6,19 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'home',
+        name: 'finance',
         component: () => import('../components/forms/Finance.vue'), // создайте этот компонент
       },
       {
         path: '/test',
         name: 'test',
         component: () => import('../components/forms/Test.vue'),
-      }
+      },
+      {
+        path: '/report',
+        name: 'report',
+        component: () => import('../components/forms/Report.vue'),
+      },
     ]
   }
 ];

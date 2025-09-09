@@ -13,6 +13,10 @@
         </a-menu-item>
         <a-menu-item key="3">
           <dollar-outlined />
+          <router-link to="/report"> Отчеты</router-link>
+        </a-menu-item>
+        <a-menu-item key="4">
+          <dollar-outlined />
           <router-link to="/"> Управление счетами</router-link>
         </a-menu-item>
         <a-sub-menu key="sub1">
@@ -22,8 +26,8 @@
               <span>Настройки</span>
             </span>
           </template>
-          <a-menu-item key="4">Управление категориями</a-menu-item>
-          <a-menu-item key="5">Форма настроек пользователя</a-menu-item>
+          <a-menu-item key="5">Управление категориями</a-menu-item>
+          <a-menu-item key="6">Форма настроек пользователя</a-menu-item>
         </a-sub-menu>
       </a-menu>
     </a-layout-sider>

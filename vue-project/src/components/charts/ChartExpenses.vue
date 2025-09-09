@@ -8,7 +8,7 @@ interface SeriesData {
 }
 
 const series = ref<SeriesData[]>([{
-  name: 'Расходы',
+  name: 'Доходы',
   data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
 }]);
 
@@ -23,7 +23,7 @@ const chartOptions = reactive<ApexOptions>({
   xaxis: {
     categories: ['01', '02', '03', '04', '05', '06', '07', '08', '09']
   },
-  colors: ['#c22a1f'],
+  colors: ['#14b557'],
   stroke: {
     curve: 'smooth'
   },
