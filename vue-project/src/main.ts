@@ -4,25 +4,26 @@ import { createPinia } from 'pinia'
 import App from './App.vue';
 import router from './router';
 import Antd from 'ant-design-vue';
+import VueApexCharts from "vue3-apexcharts";
 
 import {
+  PlusCircleOutlined,
+  DollarOutlined,
   PieChartOutlined,
-  DesktopOutlined,
-  UserOutlined,
-  TeamOutlined,
-  FileOutlined
+  SettingOutlined
 } from '@ant-design/icons-vue';
 
 const app = createApp(App)
 
 app.use(createPinia());
 app.use(router);
-app.component('PieChartOutlined', PieChartOutlined);
-app.component('DesktopOutlined', DesktopOutlined);
-app.component('UserOutlined', UserOutlined);
-app.component('TeamOutlined', TeamOutlined);
-app.component('FileOutlined', FileOutlined);
-
 app.use(Antd);
+
+app.component('ApexChart', VueApexCharts)
+
+app.component('PieChartOutlined', PieChartOutlined);
+app.component('PlusCircleOutlined', PlusCircleOutlined);
+app.component('DollarOutlined', DollarOutlined);
+app.component('SettingOutlined', SettingOutlined);
 
 app.mount('#app')

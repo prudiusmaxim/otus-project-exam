@@ -5,14 +5,14 @@ const routes = [
     path: '/',    
     children: [
       {
-        path: '', // пустой путь для корневого маршрута
+        path: '',
         name: 'home',
-        component: () => import('../Home.vue'), // создайте этот компонент
+        component: () => import('../components/forms/Finance.vue'), // создайте этот компонент
       },
       {
         path: '/test',
         name: 'test',
-        component: () => import('../Test.vue'),
+        component: () => import('../components/forms/Test.vue'),
       }
     ]
   }
